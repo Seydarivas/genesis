@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
+ 
+}
+
+.content{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    
+}
+.content img{
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.block {
+    position: relative;
+    margin: 10% auto 0;
+    width: 43%;
+    height: 700px;
+    background: linear-gradient(0deg, black);
+}
+
+.glow :before , .glow :after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(25deg, #ff00ff, #ff00, #6e0dd0, #ba55d3, #c71585);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+
+}
+
+.glow :after{
+    filter: blur(10px);
+    opacity: 0.99;
+}
