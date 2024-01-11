@@ -15,7 +15,7 @@ body {
     height: 100vh;
     font-family: "Roboto", sans-serif;
     transition: 0.25s;
-    background: black;
+    background: rgb(204, 112, 173);
 }
 
 body .options {
