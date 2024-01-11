@@ -3,29 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://kit.fontawesome.com/5977472900.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+C
-    ShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="logo.png">
     <title>NenisNails - Genesis</title>
     
 </head>
 <body>
+    <div class="options">
+            <div class="option active" style="--optionBackground: url('diseño1.jpeg');">
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">NenisNails</div>
+                        <div class="sub">Precio: S/</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground: url('diseño2.jpeg');">
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">NenisNails</div>
+                        <div class="sub">Precio: S/</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground: url('diseño3.jpeg');">
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">NenisNails</div>
+                        <div class="sub">Precio: S/</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground: url('diseño4.jpeg');">
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">NenisNails</div>
+                        <div class="sub">Precio: S/</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground: url(https://raw.githubusercontent.com/Programith/Images/main/background_05.jpg);">
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">NenisNails</div>
+                        <div class="sub">Precio: S/</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(".option").click(function () {
+                $(".option").removeClass("active");
+                $(this).addClass("active");
+            });
+        </script>
+
+
+
 
     <!-- <section class="inicio" id="inicio"> -->
-        <div class="cuerpo">
+        <!-- <div class="cuerpo">
             <div class="portada">
-                <img src="entrada.jpeg" id="imagen" width="900" height="700">
+                <center> <img src="entrada.jpeg" id="imagen"></center>
                 <div class="sombra-neon"> </div>
             </div>
             <div class="imgs">
-                <img src="diseño1.jpeg" id="d1" alt="">
-                <img src="diseño2.jpeg" id="d2" alt="">
-                <img src="diseño3.jpeg" id="d3" alt="">
-                <img src="diseño4.jpeg" id="d4" alt="">
+                <img src="diseño1.jpeg" id="d1" width="1200" height="1200">
+                <img src="diseño2.jpeg" id="d2" width="1200" height="1200">
+                <img src="diseño3.jpeg" id="d3" width="1200" height="1200">
+                <img src="diseño4.jpeg" id="d4" width="1200" height="1200">
             </div>
-        </div>
+        </div> -->
     
 </body>
 </html>
