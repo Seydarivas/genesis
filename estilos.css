@@ -1,4 +1,45 @@
 body{
+    background: blueviolet;
+}
+
+#imagen {
+    border-radius: 60px 70px 40px 140px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
     margin: 0;
     padding: 0;
     background-color: lavender;
@@ -73,4 +114,4 @@ body{
 }
 .grid-item:nth-child(even){
     background-color: #9868FA80;
-}
+}*/
